@@ -1,0 +1,79 @@
+{
+  "placeholders": [
+    {
+      "placeholder": "820221b3-e489-4c4d-847c-c4c2c6e44255",
+      "instance_id": "123e4567-e89b-12d3-a456-426614174000"
+    },
+    {
+      "placeholder": "2838721b-6fca-422d-8f3a-b7df3df43bc8",
+      "instance_id": "123e4567-e89b-12d3-a456-426614174001"
+    },
+    {
+      "placeholder": "71528034-3037-40ae-ae8c-90d26de4bad5",
+      "instance_id": "123e4567-e89b-12d3-a456-426614174002"
+    },
+    {
+      "placeholder": "c9d08535-2e9a-4ded-8c07-7fe93790b198",
+      "instance_id": "123e4567-e89b-12d3-a456-426614174003"
+    },
+    {
+      "placeholder": "b055c9ab-1b93-40c0-944f-c9ed1fce92e9",
+      "instance_id": "123e4567-e89b-12d3-a456-426614174004"
+    },
+    {
+      "placeholder": "c4a5abc7-6de4-46b6-8d2e-2e6c60f50457",
+      "instance_id": "123e4567-e89b-12d3-a456-426614174005"
+    },
+    {
+      "placeholder": "2f74ca0c-ac96-4f39-a377-3186a2e722a1",
+      "instance_id": "123e4567-e89b-12d3-a456-426614174006",
+      "metadata": {
+        "markups": {
+          "table": {
+            "style": "width: 100%; border-collapse: collapse; border: 1px solid #c3c3c3;"
+          },
+          "rows": [
+            {
+              "entity": "invoices*",
+              "parent": "invoice_value_computation",
+              "columns": {
+                "description": {
+                  "style": "padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: left;",
+                  "value": "invoices*.description"
+                },
+                "total": {
+                  "style": "padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: right; vertical-align: bottom;",
+                  "value": "invoices*.total"
+                }
+              }
+            }
+          ],
+          "headers": [
+            {
+              "key": "description",
+              "style": "width: 5%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: left;",
+              "display_name": "Description"
+            },
+            {
+              "key": "total",
+              "style": "width: 5%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: right;",
+              "display_name": "Total"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeholder": "ed3b77ba-c1d7-478d-b12e-8e1a29692b6e",
+      "instance_id": "123e4567-e89b-12d3-a456-426614174007"
+    },
+    {
+      "placeholder": "c2f01f6a-efbb-4bfa-b3b8-e93680583138",
+      "instance_id": "123e4567-e89b-12d3-a456-426614174008"
+    },
+    {
+      "placeholder": "163037e3-07d0-487b-bd3b-1807173eddb1",
+      "instance_id": "123e4567-e89b-12d3-a456-426614174009"
+    }
+  ]
+}

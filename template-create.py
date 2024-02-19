@@ -1,26 +1,26 @@
 import requests
 import json
 import sys
-from typing import Dict, Any, Tuple
 
 
-def get_branches(
-    base_url: str, company_id: str, headers: Dict[str, str]
-) -> Dict[str, Any]:
-    branch_url = (
-        f"{base_url}/core/api/v1/branch/?company={company_id}"
-    )
+def get_base_url(env):
+    if env == "local":
+        return "http://127.0.0.1:8000"
+    else:
+        return f"https://{env}.web.attentive.ai"
+
+
+def get_branches(env, company_id, headers):
+    base_url = get_base_url(env)
+    branch_url = f"{base_url}/core/api/v1/branch/?company={company_id}"
+    print(f"\nBranch URL: {branch_url}")
     branch_response = requests.get(branch_url, headers=headers)
+    print(f"Branch Response: {branch_response.json()}")
     return branch_response.json()
 
 
-def create_template(
-    base_url: str,
-    branch_id: str,
-    division_id: str,
-    html_text: str,
-    headers: Dict[str, str],
-) -> Tuple[int, Dict[str, Any]]:
+def create_template(env, branch_id, division_id, html_text, headers):
+    base_url = get_base_url(env)
     url = f"{base_url}/payments/api/v1/templates/"
     data = {
         "branch_id": branch_id,
@@ -32,51 +32,53 @@ def create_template(
     return response.status_code, response.json()
 
 
-def update_template(
-    base_url: str,
-    template_id: str,
-    placeholders: Dict[str, str],
-    headers: Dict[str, str],
-) -> Tuple[int, Dict[str, Any]]:
-    url = (
-        f"{base_url}/payments/api/v1/templates/{template_id}/"
-    )
+def update_template(env, template_id, placeholders, headers):
+    base_url = get_base_url(env)
+    url = f"{base_url}/payments/api/v1/templates/{template_id}/"
     data = {"placeholders": placeholders}
     response = requests.patch(url, headers=headers, data=json.dumps(data))
     return response.status_code, response.json()
 
 
 def main():
-    base_url = str(sys.argv[1])
-    token = str(sys.argv[2])
-    company_id = str(sys.argv[3])
-    html_text = str(sys.argv[4])
-    placeholders = json.loads(str(sys.argv[5]))  # placeholders passed as a JSON string
+    env = sys.argv[1]
+    token = sys.argv[2]
 
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
 
-    branches = get_branches(base_url, token, company_id, headers)
+    with open("companies.txt", "r") as file:
+        companies = file.read().splitlines()
+        print(f"Companies: {companies}")
 
-    for branch in branches:
-        for division in branch["divisions"]:
-            status_code, response_json = create_template(
-                base_url, branch["id"], division["id"], html_text, headers
-            )
-            print(
-                f"-------------------\nStatus Code: {status_code}\nResponse JSON: {json.dumps(response_json, indent=4)}\n-------------------"
-            )
+    with open("html_text.txt", "r") as file:
+        html_text = file.read()
+        # print(f"HTML Text: {html_text}")
 
-            if status_code == 201:  # if template creation was successful
-                template_id = response_json["id"]
-                status_code, response_json = update_template(
-                    base_url, template_id, placeholders, headers
+    with open("placeholders.json", "r") as file:
+        placeholders = json.load(file)
+        # print(f"Placeholders: {placeholders}")
+
+    for company_id in companies:
+        branches = get_branches(env, company_id, headers)
+
+        for branch in branches:
+            for division in branch["divisions"]:
+                status_code, response_json = create_template(
+                    env, branch["id"], division["id"], html_text, headers
                 )
                 print(
                     f"-------------------\nStatus Code: {status_code}\nResponse JSON: {json.dumps(response_json, indent=4)}\n-------------------"
                 )
 
+                if status_code == 201:  # if template creation was successful
+                    template_id = response_json["id"]
+                    status_code, response_json = update_template(
+                        env, template_id, placeholders, headers
+                    )
+                    print(
+                        f"-------------------\nStatus Code: {status_code}\nResponse JSON: {json.dumps(response_json, indent=4)}\n-------------------"
+                    )
+
 
 if __name__ == "__main__":
     main()
-
-#0dec7e3a-23c6-44b0-afdf-f705bd3d7da3
