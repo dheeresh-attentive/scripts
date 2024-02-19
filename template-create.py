@@ -11,11 +11,13 @@ def get_base_url(env):
 
 
 def get_branches(env, company_id, headers):
-    base_url = get_base_url(env)
+    if env == "local":
+        base_url = get_base_url("dev1")
+    else:
+        base_url = get_base_url(env)
     branch_url = f"{base_url}/core/api/v1/branch/?company={company_id}"
-    print(f"\nBranch URL: {branch_url}")
     branch_response = requests.get(branch_url, headers=headers)
-    print(f"Branch Response: {branch_response.json()}")
+    print(f"\nStatus Code: {branch_response.status_code}\n")
     return branch_response.json()
 
 
@@ -35,8 +37,7 @@ def create_template(env, branch_id, division_id, html_text, headers):
 def update_template(env, template_id, placeholders, headers):
     base_url = get_base_url(env)
     url = f"{base_url}/payments/api/v1/templates/{template_id}/"
-    data = {"placeholders": placeholders}
-    response = requests.patch(url, headers=headers, data=json.dumps(data))
+    response = requests.patch(url, headers=headers, data=json.dumps(placeholders))
     return response.status_code, response.json()
 
 
@@ -52,11 +53,9 @@ def main():
 
     with open("html_text.txt", "r") as file:
         html_text = file.read()
-        # print(f"HTML Text: {html_text}")
 
     with open("placeholders.json", "r") as file:
         placeholders = json.load(file)
-        # print(f"Placeholders: {placeholders}")
 
     for company_id in companies:
         branches = get_branches(env, company_id, headers)
@@ -67,16 +66,15 @@ def main():
                     env, branch["id"], division["id"], html_text, headers
                 )
                 print(
-                    f"-------------------\nStatus Code: {status_code}\nResponse JSON: {json.dumps(response_json, indent=4)}\n-------------------"
+                    f"-------------------\nTemplate Create Status Code: {status_code}\n-------------------"
                 )
-
                 if status_code == 201:  # if template creation was successful
                     template_id = response_json["id"]
                     status_code, response_json = update_template(
                         env, template_id, placeholders, headers
                     )
                     print(
-                        f"-------------------\nStatus Code: {status_code}\nResponse JSON: {json.dumps(response_json, indent=4)}\n-------------------"
+                        f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
                     )
 
 
