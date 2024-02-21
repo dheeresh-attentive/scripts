@@ -7,3 +7,5 @@ group_invoice_table
 group_invoice_sub_total
 group_invoice_sales_tax
 group_invoice_total
+organisation_name
+organisation_address
