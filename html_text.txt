@@ -1,4 +1,7 @@
-<table style="border-collapse: collapse; width: 100%; border: 0px dashed rgb(249, 249, 249); table-layout: fixed; word-wrap: break-word;" border="1">
+<html><head><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>  body {    background: #fff;    font-family: 'Roboto', sans-serif;  }  img {    max-width: 100%;  }  .mce-content-body:not(.mce-content-body[data-mce-placeholder])  {    font-family: 'Roboto', sans-serif;    line-height: 1.4;    background-color: #fff;    box-sizing: border-box;    margin: 0;    padding: 2rem;  }  .mce-pagebreak {    display:none;   }  .mce-content-body {    width: 100%;    height: 100%;    font-size: 14px;    false  }  .tox-editor-header: {    maxWidth: 640px;  }  '.tox-notifications-container': {    display: 'none !important'  }  .mceNonEditable {    background-color: #E1F4EA;    padding: 1px 0;    color: #1F5136;    cursor: pointer !important;    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;    font-size: 12.75px;  }  td {    max-width:18vw !important;  }  .page-break {    border-top: 2px dashed lightgray;    display: flex;    margin: 30px 0;    justify-content: center;    background-color: #fff;    outline:none !important;   }  .page-break p {    background: #fff;    border: 1px solid #c4c4c4;    border-radius: 2px;    box-shadow: 2px 2px 1px rgb(0 0 0 / 15%);    color: #333;    display: block;    font-family: Helvetica,Arial,Tahoma,Verdana,Sans-Serif;    font-size: .75em;    font-weight: 700;    padding: 0.3em 0.6em;    margin-top:-15px;  }  .c-td, .c-th {    padding:4px 0 4px 4px !important;    text-align:start !important;    border:1px solid #000 !important;    border-collapse: collapse !important;  }  .text-bold {    font-weight: 500 !important;  }  .gray-bg {    background-color: #d9d9d9 !important;  }  table,td,th {    border-collapse: collapse;    border: 1px solid #c9c9c9;  }  td, th {    padding: 8px;  }          /* Apply page-like styling */        @media only screen and (min-width: 840px) {          html {            background: #ebebeb;            min-height: 100%;            padding: 0.5rem;          }          body {            background-color: #fff;            box-shadow: 0 0 4px rgba(0, 0, 0, .2);            box-sizing: border-box;            margin: 1rem auto !important;            max-width: 640px;            min-height: calc(100vh - 1rem);            padding: 2rem 6rem 2rem 6rem;          }        }      </style></head><body><table style="border-collapse: collapse; width: 100%; border: 0px dashed rgb(249, 249, 249); table-layout: fixed; word-wrap: break-word;" border="1">
 <tbody>
 <tr>
 <td style="width: 50%; border-width: 0px; vertical-align: top;"><span class="mceNonEditable" data-placeholder-instance-id="34d7ac53-e24d-4da3-9d83-57f8863ae454">{{organisation_logo}}</span></td>
@@ -11,7 +14,7 @@
 </table>
 <p style="word-wrap: break-word;"><strong>BILL TO</strong><br><span class="mceNonEditable" data-placeholder-instance-id="bb86fd63-1c89-4c35-b242-3ca4653aafab">{{group_invoice_billing_to}}</span><br><br><br></p>
 <p><span style="word-wrap: break-word;"><span class="mceNonEditable" data-placeholder-instance-id="e91bb976-8803-454c-bf55-100e93bb472b">{{group_invoice_table}}</span></span></p>
-<p>&nbsp;</p>
+
 <table style="border-collapse: collapse; width: 100%; border-width: 0px; table-layout: fixed; overflow-wrap: break-word;" border="1"><colgroup><col style="width: 47.0299%;"><col style="width: 26.2647%;"><col style="width: 26.7054%;"></colgroup>
 <tbody>
 <tr>
@@ -33,4 +36,4 @@
 </table>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><strong>Remit to: <span class="mceNonEditable" data-placeholder-instance-id="c5f06b79-2b8b-4f37-9f74-d64de8bbe5bb">{{organisation_name}}</span> &bull; <span class="mceNonEditable" data-placeholder-instance-id="386457d0-110e-4213-aa0d-183c202eecaf">{{organisation_address}}</span></strong></p>
+<p style="text-align: center;"><strong>Remit to: <span class="mceNonEditable" data-placeholder-instance-id="c5f06b79-2b8b-4f37-9f74-d64de8bbe5bb">{{organisation_name}}</span> &bull; <span class="mceNonEditable" data-placeholder-instance-id="386457d0-110e-4213-aa0d-183c202eecaf">{{organisation_address}}</span></strong></p></body></html>
