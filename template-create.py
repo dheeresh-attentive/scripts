@@ -6,6 +6,8 @@ import sys
 def get_base_url(env):
     if env == "local":
         return "http://127.0.0.1:8000"
+    elif env == "prod":
+        return "https://web.attentive.ai"
     else:
         return f"https://{env}.web.attentive.ai"
 
