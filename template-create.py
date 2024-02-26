@@ -49,7 +49,8 @@ def get_group_invoice_templates(env, headers):
     url = f"{base_url}/payments/api/v1/templates/?type=3&page_size=100"
     response = requests.get(url, headers=headers)
     return response.status_code, response.json()
-    
+
+
 def main():
     env = sys.argv[1]
     token = sys.argv[2]
@@ -66,34 +67,38 @@ def main():
     with open("placeholders.json", "r") as file:
         placeholders = json.load(file)
 
-    # status_code, response_json = get_group_invoice_templates(env, headers)
-    # print(f"-------------------\nGroup Invoice Templates Status code: {status_code}\n-------------------")
-    # for template in response_json["results"]:
-    #     template_id = template["id"]
-    #     status_code, response_json = update_template(env, template_id, placeholders, headers)
-    #     print(
-    #         f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
-    #     )
+    status_code, response_json = get_group_invoice_templates(env, headers)
+    print(
+        f"-------------------\nGroup Invoice Templates Status code: {status_code}\n-------------------"
+    )
+    for template in response_json["results"]:
+        template_id = template["id"]
+        status_code, response_json = update_template(
+            env, template_id, placeholders, headers
+        )
+        print(
+            f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
+        )
 
-    for company_id in companies:
-        branches = get_branches(env, company_id, headers)
+    # for company_id in companies:
+    #     branches = get_branches(env, company_id, headers)
 
-        for branch in branches:
-            for division in branch["divisions"]:
-                status_code, response_json = create_template(
-                    env, branch["id"], division["id"], html_text, headers
-                )
-                print(
-                    f"-------------------\nTemplate Create Status Code: {status_code}\n-------------------"
-                )
-                if status_code == 201:  # if template creation was successful
-                    template_id = response_json["id"]
-                    status_code, response_json = update_template(
-                        env, template_id, placeholders, headers
-                    )
-                    print(
-                        f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
-                    )
+    #     for branch in branches:
+    #         for division in branch["divisions"]:
+    #             status_code, response_json = create_template(
+    #                 env, branch["id"], division["id"], html_text, headers
+    #             )
+    #             print(
+    #                 f"-------------------\nTemplate Create Status Code: {status_code}\n-------------------"
+    #             )
+    #             if status_code == 201:  # if template creation was successful
+    #                 template_id = response_json["id"]
+    #                 status_code, response_json = update_template(
+    #                     env, template_id, placeholders, headers
+    #                 )
+    #                 print(
+    #                     f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
+    #                 )
 
 
 if __name__ == "__main__":
