@@ -27,7 +27,6 @@ def get_branches(env, company_id, headers):
 def create_template(env, branch_id, division_id, html_text, headers):
     base_url = get_base_url(env)
     url = f"{base_url}/inventory_management/api/v1/templates/"
-    print(f"url: {url}")
     data = {
         "branch_id": branch_id,
         "division_id": division_id,
