@@ -26,13 +26,13 @@ def get_branches(env, company_id, headers):
 
 def create_template(env, branch_id, division_id, html_text, headers):
     base_url = get_base_url(env)
-    url = f"{base_url}/payments/api/v1/templates/"
+    url = f"{base_url}/inventory_management/api/v1/templates/"
     print(f"url: {url}")
     data = {
         "branch_id": branch_id,
         "division_id": division_id,
-        "type": 3,
-        "name": "Group Invoice Template - Maldonado",
+        "type": 1,
+        "name": "PO Download Template - Maldonado",
         "html_text": html_text,
     }
     response = requests.post(url, headers=headers, data=json.dumps(data))
@@ -41,17 +41,9 @@ def create_template(env, branch_id, division_id, html_text, headers):
 
 def update_template(env, template_id, placeholders, headers):
     base_url = get_base_url(env)
-    url = f"{base_url}/payments/api/v1/templates/{template_id}/"
+    url = f"{base_url}/inventory_management/api/v1/templates/{template_id}/"
     print(f"url: {url}")
     response = requests.patch(url, headers=headers, data=json.dumps(placeholders))
-    return response.status_code, response.json()
-
-
-def get_group_invoice_templates(env, headers):
-    base_url = get_base_url(env)
-    url = f"{base_url}/payments/api/v1/templates/?type=3&page_size=100"
-    print(f"url: {url}")
-    response = requests.get(url, headers=headers)
     return response.status_code, response.json()
 
 
@@ -70,19 +62,6 @@ def main():
 
     with open("placeholders.json", "r") as file:
         placeholders = json.load(file)
-
-    # status_code, response_json = get_group_invoice_templates(env, headers)
-    # print(
-    #     f"-------------------\nGroup Invoice Templates Status code: {status_code}\n-------------------"
-    # )
-    # for template in response_json["results"]:
-    #     template_id = template["id"]
-    #     status_code, response_json = update_template(
-    #         env, template_id, placeholders, headers
-    #     )
-    #     print(
-    #         f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
-    #     )
 
     for company_id in companies:
         branches = get_branches(env, company_id, headers)
