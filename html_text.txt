@@ -36,7 +36,7 @@
         </p>
         <p style="word-wrap: break-word;">
             <strong>PO #:</strong><br />
-            <span class="mceNonEditable" data-placeholder-instance-id="7a72de37-c760-4d50-ab16-4ea6a1805527">{{po_number}}</span><br />
+            <span class="mceNonEditable" data-placeholder-instance-id="7a72de37-c760-4d50-ab16-4ea6a1805527">{{group_po_number}}</span><br />
             <br />
             <br />
         </p>
