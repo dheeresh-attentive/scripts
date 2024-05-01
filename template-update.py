@@ -36,10 +36,6 @@ def main():
 
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
 
-    with open("company.txt", "r") as file:
-        company_id = file.read().strip()
-        print(f"Company: {company_id}")
-
     with open("html_text.txt", "r") as file:
         html_text = file.read()
 
@@ -49,6 +45,7 @@ def main():
     status_code, response_json = get_group_invoice_templates(env, headers)
     results = response_json["results"]
     cnt = 0
+    print(f"len of results: {len(results)}")
     for template in results:
         template_id = template["id"]
         print(f"Template ID: {template_id}")
