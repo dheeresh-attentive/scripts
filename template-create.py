@@ -12,45 +12,20 @@ def get_base_url(env):
         return f"https://{env}.web.attentive.ai"
 
 
-def get_branches(env, company_id, headers):
-    if env == "local":
-        base_url = get_base_url("dev1")
-    else:
-        base_url = get_base_url(env)
-    branch_url = f"{base_url}/core/api/v1/branch/?company={company_id}"
-    print(f"branch_url: {branch_url}")
-    branch_response = requests.get(branch_url, headers=headers)
-    print(f"\nStatus Code: {branch_response.status_code}\n")
-    return branch_response.json()
-
-
-def create_template(env, branch_id, division_id, html_text, headers):
-    base_url = get_base_url(env)
-    url = f"{base_url}/payments/api/v1/templates/"
-    print(f"url: {url}")
-    data = {
-        "branch_id": branch_id,
-        "division_id": division_id,
-        "type": 3,
-        "name": "Group Invoice Template - K&H Landscape and Grounds Maintenance.",
-        "html_text": html_text,
-    }
-    response = requests.post(url, headers=headers, data=json.dumps(data))
-    return response.status_code, response.json()
-
-
-def update_template(env, template_id, placeholders, headers):
+def update_template(env, template_id, placeholders, headers, html_text):
     base_url = get_base_url(env)
     url = f"{base_url}/payments/api/v1/templates/{template_id}/"
-    print(f"url: {url}")
-    response = requests.patch(url, headers=headers, data=json.dumps(placeholders))
+    data = {
+        "placeholders": placeholders["placeholders"],
+        "html_text": html_text,
+    }
+    response = requests.patch(url, headers=headers, data=json.dumps(data))
     return response.status_code, response.json()
 
 
 def get_group_invoice_templates(env, headers):
     base_url = get_base_url(env)
     url = f"{base_url}/payments/api/v1/templates/?type=3&page_size=100"
-    print(f"url: {url}")
     response = requests.get(url, headers=headers)
     return response.status_code, response.json()
 
@@ -71,25 +46,20 @@ def main():
     with open("placeholders.json", "r") as file:
         placeholders = json.load(file)
 
-    branches = get_branches(env, company_id, headers)
-
-    for branch in branches:
-        for division in branch["divisions"]:
-            status_code, response_json = create_template(
-                env, branch["id"], division["id"], html_text, headers
-            )
-            print(
-                f"-------------------\nTemplate Create Status Code: {status_code}\n-------------------"
-            )
-            if status_code == 201:  # if template creation was successful
-                template_id = response_json["id"]
-                print(f"Template ID: {template_id}")
-                status_code, response_json = update_template(
-                    env, template_id, placeholders, headers
-                )
-                print(
-                    f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
-                )
+    status_code, response_json = get_group_invoice_templates(env, headers)
+    results = response_json["results"]
+    cnt = 0
+    for template in results:
+        template_id = template["id"]
+        print(f"Template ID: {template_id}")
+        status_code, response_json = update_template(
+            env, template_id, placeholders, headers, html_text
+        )
+        print(
+            f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
+        )
+        cnt += 1
+    print(f"Total Templates Updated: {cnt}")
 
 
 if __name__ == "__main__":
