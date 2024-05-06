@@ -32,7 +32,7 @@ def create_template(env, branch_id, division_id, html_text, headers):
         "branch_id": branch_id,
         "division_id": division_id,
         "type": 3,
-        "name": "Group Invoice Template - K&H Landscape and Grounds Maintenance.",
+        "name": "Group Invoice Template - DTK Facility Services",
         "html_text": html_text,
     }
     response = requests.post(url, headers=headers, data=json.dumps(data))
