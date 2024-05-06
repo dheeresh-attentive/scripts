@@ -47,14 +47,6 @@ def update_template(env, template_id, placeholders, headers):
     return response.status_code, response.json()
 
 
-def get_group_invoice_templates(env, headers):
-    base_url = get_base_url(env)
-    url = f"{base_url}/payments/api/v1/templates/?type=3&page_size=100"
-    print(f"url: {url}")
-    response = requests.get(url, headers=headers)
-    return response.status_code, response.json()
-
-
 def main():
     env = sys.argv[1]
     token = sys.argv[2]
