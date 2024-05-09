@@ -52,9 +52,9 @@ def main():
 
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
 
-    with open("companies.txt", "r") as file:
-        companies = file.read().splitlines()
-        print(f"Companies: {companies}")
+    with open("company.txt", "r") as file:
+        company_id = file.read().strip()
+        print(f"Company: {company_id}")
 
     with open("html_text.txt", "r") as file:
         html_text = file.read()
@@ -62,26 +62,25 @@ def main():
     with open("placeholders.json", "r") as file:
         placeholders = json.load(file)
 
-    for company_id in companies:
-        branches = get_branches(env, company_id, headers)
+    branches = get_branches(env, company_id, headers)
 
-        for branch in branches:
-            for division in branch["divisions"]:
-                status_code, response_json = create_template(
-                    env, branch["id"], division["id"], html_text, headers
+    for branch in branches:
+        for division in branch["divisions"]:
+            status_code, response_json = create_template(
+                env, branch["id"], division["id"], html_text, headers
+            )
+            print(
+                f"-------------------\nTemplate Create Status Code: {status_code}\n-------------------"
+            )
+            if status_code == 201:  # if template creation was successful
+                template_id = response_json["id"]
+                print(f"Template ID: {template_id}")
+                status_code, response_json = update_template(
+                    env, template_id, placeholders, headers
                 )
                 print(
-                    f"-------------------\nTemplate Create Status Code: {status_code}\n-------------------"
+                    f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
                 )
-                if status_code == 201:  # if template creation was successful
-                    template_id = response_json["id"]
-                    print(f"Template ID: {template_id}")
-                    status_code, response_json = update_template(
-                        env, template_id, placeholders, headers
-                    )
-                    print(
-                        f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
-                    )
 
 
 if __name__ == "__main__":
