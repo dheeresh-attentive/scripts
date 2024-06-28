@@ -1,3 +1,4 @@
+import csv
 import requests
 import json
 import sys
@@ -24,14 +25,14 @@ def get_branches(env, company_id, headers):
     return branch_response.json()
 
 
-def create_template(env, branch_id, division_id, html_text, headers):
+def create_template(env, branch_id, division_id, html_text, headers, name):
     base_url = get_base_url(env)
     url = f"{base_url}/inventory_management/api/v1/templates/"
     data = {
         "branch_id": branch_id,
         "division_id": division_id,
         "type": 1,
-        "name": "PO Download Template - Maldonado",
+        "name": f"PO Download Template - {name}",
         "html_text": html_text,
     }
     response = requests.post(url, headers=headers, data=json.dumps(data))
@@ -48,13 +49,7 @@ def update_template(env, template_id, placeholders, headers):
 
 def main():
     env = sys.argv[1]
-    token = sys.argv[2]
-
-    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
-
-    with open("company.txt", "r") as file:
-        company_id = file.read().strip()
-        print(f"Company: {company_id}")
+    csv_file_path = "companies.csv"
 
     with open("html_text.txt", "r") as file:
         html_text = file.read()
@@ -62,25 +57,38 @@ def main():
     with open("placeholders.json", "r") as file:
         placeholders = json.load(file)
 
-    branches = get_branches(env, company_id, headers)
+    with open(csv_file_path, newline="") as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            company_id = row["id"]
+            name = row["name"]
+            token = row["token"]
+            headers = {
+                "Authorization": f"Bearer {token}",
+                "Content-Type": "application/json",
+            }
 
-    for branch in branches:
-        for division in branch["divisions"]:
-            status_code, response_json = create_template(
-                env, branch["id"], division["id"], html_text, headers
-            )
-            print(
-                f"-------------------\nTemplate Create Status Code: {status_code}\n-------------------"
-            )
-            if status_code == 201:  # if template creation was successful
-                template_id = response_json["id"]
-                print(f"Template ID: {template_id}")
-                status_code, response_json = update_template(
-                    env, template_id, placeholders, headers
-                )
-                print(
-                    f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
-                )
+            print(f"Processing Company: {name} with ID: {company_id}")
+
+            branches = get_branches(env, company_id, headers)
+
+            for branch in branches:
+                for division in branch["divisions"]:
+                    status_code, response_json = create_template(
+                        env, branch["id"], division["id"], html_text, headers, name
+                    )
+                    print(
+                        f"-------------------\nTemplate Create Status Code: {status_code}\n-------------------"
+                    )
+                    if status_code == 201:
+                        template_id = response_json["id"]
+                        print(f"Template ID: {template_id}")
+                        status_code, response_json = update_template(
+                            env, template_id, placeholders, headers
+                        )
+                        print(
+                            f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
+                        )
 
 
 if __name__ == "__main__":
