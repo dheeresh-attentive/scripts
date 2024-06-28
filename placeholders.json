@@ -13,80 +13,6 @@
       }
     },
     {
-      "instance_id": "05fb1549-fd0c-49ab-9808-4bfa81965f6f",
-      "placeholder": "8589b1c1-3e76-4f41-8f99-950b98b7849b",
-      "metadata": {}
-    },
-    {
-      "instance_id": "a80cef59-e740-4ffe-bb9b-da8c3925c32b",
-      "placeholder": "edf22d35-3fe8-43b2-9304-128434cb3500",
-      "metadata": {}
-    },
-    {
-      "instance_id": "6cb7083f-094e-426a-87c3-481f6e138886",
-      "placeholder": "6e2a14b6-e31d-43a5-9242-2bb4bc065f1b",
-      "metadata": {}
-    },
-    {
-      "instance_id": "bb86fd63-1c89-4c35-b242-3ca4653aafab",
-      "placeholder": "8ee720c4-1908-4815-b17f-343e49382b82",
-      "metadata": {}
-    },
-    {
-      "instance_id": "e91bb976-8803-454c-bf55-100e93bb472b",
-      "placeholder": "b530d6ff-0257-47f5-a798-cdfa3e0c81aa",
-      "metadata": {
-        "markups": {
-          "table": {
-            "style": "width: 100%; border-collapse: collapse; border: 1px solid #c3c3c3; table-layout: fixed; word-wrap: break-word;"
-          },
-          "rows": [
-            {
-              "entity": "invoices*",
-              "parent": "invoice_value_computation",
-              "columns": {
-                "description": {
-                  "style": "padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: left;",
-                  "value": "invoices*.description"
-                },
-                "total": {
-                  "style": "padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: right; vertical-align: bottom;",
-                  "value": "invoices*.total"
-                }
-              }
-            }
-          ],
-          "headers": [
-            {
-              "key": "description",
-              "style": "width: 5%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: left;",
-              "display_name": "Description"
-            },
-            {
-              "key": "total",
-              "style": "width: 5%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: right;",
-              "display_name": "Total"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "instance_id": "059e5cf2-c87d-47d8-9bbc-6b0ae4ee53da",
-      "placeholder": "90c6fd7d-f34b-4541-9971-3ee9c908e966",
-      "metadata": {}
-    },
-    {
-      "instance_id": "b37ebf3b-c8c9-4f55-b1a1-a328e3672dba",
-      "placeholder": "abad887f-d7e7-4207-902f-6da42298953d",
-      "metadata": {}
-    },
-    {
-      "instance_id": "58235057-ab54-401b-a4d2-f011b6f37cbb",
-      "placeholder": "5c60c55a-7d06-41ad-8883-9871188121d1",
-      "metadata": {}
-    },
-    {
       "instance_id": "c5f06b79-2b8b-4f37-9f74-d64de8bbe5bb",
       "placeholder": "6eb7f3a2-a8f4-417f-91ac-cc0e4924cf91",
       "metadata": {}
@@ -97,9 +23,32 @@
       "metadata": {}
     },
     {
-      "instance_id": "7a72de37-c760-4d50-ab16-4ea6a1805527",
-      "placeholder": "f0fba197-39af-481f-8bac-988c21c31f7a",
+      "instance_id": "91100f43-a12d-4b94-b699-001b7372517a",
+      "placeholder": "627275d0-27f5-4b46-8455-6c923072c97e",
       "metadata": {}
+    },
+    {
+      "instance_id":"ff098457-687a-4092-a824-b9904cfdd504",
+      "placeholder":"e824fe80-8027-4c9d-9523-44e80cd258af",
+      "metadata":{}
+    },
+    {
+      "instance_id":"7177fc5a-86fa-4cab-96af-e688442e410b",
+      "placeholder":"68f6b158-d821-4f6e-99dd-2b4adf254bf0",
+      "metadata":{}
+    },
+    {
+      "instance_id":"7af04c23-c32e-4f81-8021-8d37b5d457fb",
+      "placeholder":"157ae300-3474-443b-9f1b-1dc4fcf9cd8a",
+      "metadata":{}
+    },
+    {
+      "instance_id":"b8305c6e-804b-427b-b385-bcf179b1069f",
+      "placeholder":"521e6e9f-c27f-4d45-a6b4-0a67fdc57dca"
+    },
+    {
+      "instance_id":"4689c6cf-0e82-445f-8b4c-225661ef270a",
+      "placeholder":"92e496f8-4af0-477f-98a9-68862aec3eba"
     }
   ]
 }
