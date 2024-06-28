@@ -31,8 +31,8 @@ def create_template(env, branch_id, division_id, html_text, headers):
     data = {
         "branch_id": branch_id,
         "division_id": division_id,
-        "type": 3,
-        "name": "Group Invoice Template - DTK Facility Services",
+        "type": 4,
+        "name": "Statement Template - DTK Facility Services",
         "html_text": html_text,
     }
     response = requests.post(url, headers=headers, data=json.dumps(data))

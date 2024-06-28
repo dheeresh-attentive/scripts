@@ -1,82 +1,70 @@
 <html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet"
-        />
-        <style>
-            body {    background: #fff;    font-family: 'Roboto', sans-serif;  }  img {    max-width: 100%;  }  .mce-content-body:not(.mce-content-body[data-mce-placeholder])  {    font-family: 'Roboto', sans-serif;    line-height: 1.4;    background-color: #fff;    box-sizing: border-box;    margin: 0;    padding: 2rem;  }  .mce-pagebreak {    display:none;   }  .mce-content-body {    width: 100%;    height: 100%;    font-size: 14px;    false  }  .tox-editor-header: {    maxWidth: 640px;  }  '.tox-notifications-container': {    display: 'none !important'  }  .mceNonEditable {    background-color: #E1F4EA;    padding: 1px 0;    color: #1F5136;    cursor: pointer !important;    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;    font-size: 12.75px;  }  td {    max-width:18vw !important;  }  .page-break {    border-top: 2px dashed lightgray;    display: flex;    margin: 30px 0;    justify-content: center;    background-color: #fff;    outline:none !important;   }  .page-break p {    background: #fff;    border: 1px solid #c4c4c4;    border-radius: 2px;    box-shadow: 2px 2px 1px rgb(0 0 0 / 15%);    color: #333;    display: block;    font-family: Helvetica,Arial,Tahoma,Verdana,Sans-Serif;    font-size: .75em;    font-weight: 700;    padding: 0.3em 0.6em;    margin-top:-15px;  }  .c-td, .c-th {    padding:4px 0 4px 4px !important;    text-align:start !important;    border:1px solid #000 !important;    border-collapse: collapse !important;  }  .text-bold {    font-weight: 500 !important;  }  .gray-bg {    background-color: #d9d9d9 !important;  }  table,td,th {    border-collapse: collapse;    border: 1px solid #c9c9c9;  }  td, th {    padding: 8px;  }          /* Apply page-like styling */        @media only screen and (min-width: 840px) {          html {            background: #ebebeb;            min-height: 100%;            padding: 0.5rem;          }          body {            background-color: #fff;            box-shadow: 0 0 4px rgba(0, 0, 0, .2);            box-sizing: border-box;            margin: 1rem auto !important;            max-width: 640px;            min-height: calc(100vh - 1rem);            padding: 2rem 6rem 2rem 6rem;          }        }
-        </style>
-    </head>
-    <body>
-        <table style="border-collapse: collapse; width: 100%; border: 0px dashed rgb(249, 249, 249); table-layout: fixed; word-wrap: break-word;" border="1">
-            <tbody>
-                <tr>
-                    <td style="width: 50%; border-width: 0px; vertical-align: top;"><span class="mceNonEditable" data-placeholder-instance-id="34d7ac53-e24d-4da3-9d83-57f8863ae454">{{organisation_logo}}</span></td>
-                    <td style="width: 50%; text-align: right; border-width: 0px; vertical-align: top;">
-                        <p>
-                            <span style="font-size: 14pt;"><strong>INVOICE</strong></span>
-                        </p>
-                        <p>
-                            <strong>Invoice B #: <span class="mceNonEditable" data-placeholder-instance-id="05fb1549-fd0c-49ab-9808-4bfa81965f6f">{{group_invoice_number}}</span></strong><br />
-                            <strong>Date: <span class="mceNonEditable" data-placeholder-instance-id="a80cef59-e740-4ffe-bb9b-da8c3925c32b">{{group_invoice_date}}</span></strong><br />
-                            <span style="color: rgb(186, 55, 42);">
-                                <strong>DUE DATE: <span class="mceNonEditable" data-placeholder-instance-id="6cb7083f-094e-426a-87c3-481f6e138886">{{group_invoice_due_date}}</span></strong>
-                            </span>
-                        </p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p style="word-wrap: break-word;">
-            <strong>BILL TO</strong><br />
-            <span class="mceNonEditable" data-placeholder-instance-id="bb86fd63-1c89-4c35-b242-3ca4653aafab">{{group_invoice_billing_to}}</span><br />
-        </p>
-        <p style="word-wrap: break-word;">
-            <strong>PO #:</strong><br />
-            <span class="mceNonEditable" data-placeholder-instance-id="7a72de37-c760-4d50-ab16-4ea6a1805527">{{group_po_number}}</span><br />
-            <br />
-            <br />
-        </p>
-        <p>
-            <span style="word-wrap: break-word;"><span class="mceNonEditable" data-placeholder-instance-id="e91bb976-8803-454c-bf55-100e93bb472b">{{group_invoice_table}}</span></span>
-        </p>
-
-        <table style="border-collapse: collapse; width: 100%; border-width: 0px; table-layout: fixed; overflow-wrap: break-word;" border="1">
-            <colgroup>
-                <col style="width: 47.0299%;" />
-                <col style="width: 26.2647%;" />
-                <col style="width: 26.7054%;" />
-            </colgroup>
-            <tbody>
-                <tr>
-                    <td style="border-width: 0px;">Thank you for your business!</td>
-                    <td style="text-align: right; border-width: 0px;">Invoice Subtotal</td>
-                    <td style="text-align: right; border-width: 0px;"><span class="mceNonEditable" data-placeholder-instance-id="059e5cf2-c87d-47d8-9bbc-6b0ae4ee53da">{{group_invoice_sub_total}}</span></td>
-                </tr>
-                <tr>
-                    <td style="text-align: right; border-width: 0px;">&nbsp;</td>
-                    <td style="text-align: right; border-width: 0px;">Sales Tax</td>
-                    <td style="text-align: right; border-width: 0px;"><span class="mceNonEditable" data-placeholder-instance-id="b37ebf3b-c8c9-4f55-b1a1-a328e3672dba">{{group_invoice_sales_tax}}</span></td>
-                </tr>
-                <tr>
-                    <td style="text-align: right; border-width: 0px;">&nbsp;</td>
-                    <td style="text-align: right; border-width: 0px;"><strong>Invoice Total</strong></td>
-                    <td style="width: 50.1112%; border-width: 0px; vertical-align: top; text-align: right;">
-                        <strong><span class="mceNonEditable" data-placeholder-instance-id="58235057-ab54-401b-a4d2-f011b6f37cbb">{{group_invoice_total}}</span></strong>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p style="text-align: center;">
-            <strong>
-                Remit to: <span class="mceNonEditable" data-placeholder-instance-id="c5f06b79-2b8b-4f37-9f74-d64de8bbe5bb">{{organisation_name}}</span> &bull;
-                <span class="mceNonEditable" data-placeholder-instance-id="386457d0-110e-4213-aa0d-183c202eecaf">{{organisation_address}}</span>
-            </strong>
-        </p>
-    </body>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {    background: #fff;    font-family: 'Roboto', sans-serif;  }  img {    max-width: 100%;  }  .mce-content-body:not(.mce-content-body[data-mce-placeholder])  {    font-family: 'Roboto', sans-serif;    line-height: 1.4;    background-color: #fff;    box-sizing: border-box;    margin: 0;    padding: 2rem;  }  .mce-pagebreak {    display:none;   }  .mce-content-body {    width: 100%;    height: 100%;    font-size: 14px;    false  }  .tox-editor-header: {    maxWidth: 640px;  }  '.tox-notifications-container': {    display: 'none !important'  }  .mceNonEditable {    background-color: #E1F4EA;    padding: 1px 0;    color: #1F5136;    cursor: pointer !important;    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;    font-size: 12.75px;  }  td {    max-width:18vw !important;  }  .page-break {    border-top: 2px dashed lightgray;    display: flex;    margin: 30px 0;    justify-content: center;    background-color: #fff;    outline:none !important;   }  .page-break p {    background: #fff;    border: 1px solid #c4c4c4;    border-radius: 2px;    box-shadow: 2px 2px 1px rgb(0 0 0 / 15%);    color: #333;    display: block;    font-family: Helvetica,Arial,Tahoma,Verdana,Sans-Serif;    font-size: .75em;    font-weight: 700;    padding: 0.3em 0.6em;    margin-top:-15px;  }  .c-td, .c-th {    padding:4px 0 4px 4px !important;    text-align:start !important;    border:1px solid #000 !important;    border-collapse: collapse !important;  }  .text-bold {    font-weight: 500 !important;  }  .gray-bg {    background-color: #d9d9d9 !important;  }  table,td,th {    border-collapse: collapse;    border: 1px solid #c9c9c9;  }  td, th {    padding: 8px;  }          /* Apply page-like styling */        @media only screen and (min-width: 840px) {          html {            background: #ebebeb;            min-height: 100%;            padding: 0.5rem;          }          body {            background-color: #fff;            box-shadow: 0 0 4px rgba(0, 0, 0, .2);            box-sizing: border-box;            margin: 1rem auto !important;            max-width: 640px;            min-height: calc(100vh - 1rem);            padding: 2rem 6rem 2rem 6rem;          }        }
+    </style>
+  </head>
+  <body>
+    <p><span class="mceNonEditable" data-placeholder-instance-id="48c87c47-7114-41bb-baa1-16cbfc4da6d7">{{organisation_logo}}</span>&nbsp;</p>
+    <div style="display: flex; justify-content: space-between; font-size: 1.1rem">
+      <div style="width: 75%">
+        <div>
+          <strong
+            ><span class="mceNonEditable" data-placeholder-instance-id="894e4def-4744-4382-95cd-61587763136f">{{organisation_name}}</span></strong
+          >
+        </div>
+        <div>
+          <p>
+            <span class="mceNonEditable" data-placeholder-instance-id="c30c1457-db4b-4a6c-b81d-135eec4d3f9b">{{organisation_address}}</span>
+          </p>
+        </div>
+      </div>
+      <div style="width: 25%">
+        <div><strong>Statement</strong></div>
+        <div>
+          <p>Date: <span class="mceNonEditable" data-placeholder-instance-id="91100f43-a12d-4b94-b699-001b7372517a">{{statement_date}}</span></p>
+        </div>
+      </div>
+    </div>
+    <p>&nbsp;</p>
+    <div style="display: flex; justify-content: space-between">
+      <div style="width: 75%">
+        <strong>Bill to:</strong>
+        <div>
+          <p><span class="mceNonEditable" data-placeholder-instance-id="ff098457-687a-4092-a824-b9904cfdd504">{{customer_company_name}}</span></p>
+        </div>
+        <div>
+          <p><span class="mceNonEditable" data-placeholder-instance-id="7177fc5a-86fa-4cab-96af-e688442e410b">{{customer_company_address}}</span></p>
+        </div>
+      </div>
+      <div style="width: 25%">
+        <div><strong>Amount due:</strong></div>
+        <div>
+          <p><span class="mceNonEditable" data-placeholder-instance-id="7af04c23-c32e-4f81-8021-8d37b5d457fb">{{amount_due}}</span></p>
+        </div>
+        <br />
+        <div><strong>Enclosed:</strong></div>
+      </div>
+    </div>
+    <br />
+    <p style="text-align: center">
+      <span style="font-size: 8pt"><em>Please detach top portion and return with your payment</em></span>
+    </p>
+    <p style="text-align: center">
+      <span style="font-size: 8pt"
+        ><em
+          >----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</em
+        ></span
+      >
+    </p>
+    <p><span class="mceNonEditable" data-placeholder-instance-id="b8305c6e-804b-427b-b385-bcf179b1069f">{{statement_invoice_table}}</span>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><span class="mceNonEditable" data-placeholder-instance-id="4689c6cf-0e82-445f-8b4c-225661ef270a">{{statement_ageing_table}}</span></p>
+  </body>
 </html>
