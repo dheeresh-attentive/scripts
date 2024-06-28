@@ -1,47 +1,47 @@
 <html><head><link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <style>  body {    background: #fff;    font-family: 'Roboto', sans-serif;  }  img {    max-width: 100%;  }  .mce-content-body:not(.mce-content-body[data-mce-placeholder])  {    font-family: 'Roboto', sans-serif;    line-height: 1.4;    background-color: #fff;    box-sizing: border-box;    margin: 0;    padding: 2rem;  }  .mce-pagebreak {    display:none;   }  .mce-content-body {    width: 100%;    height: 100%;    font-size: 14px;    false  }  .tox-editor-header: {    maxWidth: 640px;  }  '.tox-notifications-container': {    display: 'none !important'  }  .mceNonEditable {    background-color: #E1F4EA;    padding: 1px 0;    color: #1F5136;    cursor: pointer !important;    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;    font-size: 12.75px;  }  td {    max-width:18vw !important;  }  .page-break {    border-top: 2px dashed lightgray;    display: flex;    margin: 30px 0;    justify-content: center;    background-color: #fff;    outline:none !important;   }  .page-break p {    background: #fff;    border: 1px solid #c4c4c4;    border-radius: 2px;    box-shadow: 2px 2px 1px rgb(0 0 0 / 15%);    color: #333;    display: block;    font-family: Helvetica,Arial,Tahoma,Verdana,Sans-Serif;    font-size: .75em;    font-weight: 700;    padding: 0.3em 0.6em;    margin-top:-15px;  }  .c-td, .c-th {    padding:4px 0 4px 4px !important;    text-align:start !important;    border:1px solid #000 !important;    border-collapse: collapse !important;  }  .text-bold {    font-weight: 500 !important;  }  .gray-bg {    background-color: #d9d9d9 !important;  }  table,td,th {    border-collapse: collapse;    border: 1px solid #c9c9c9;  }  td, th {    padding: 8px;  }          /* Apply page-like styling */        @media only screen and (min-width: 840px) {          html {            background: #ebebeb;            min-height: 100%;            padding: 0.5rem;          }          body {            background-color: #fff;            box-shadow: 0 0 4px rgba(0, 0, 0, .2);            box-sizing: border-box;            margin: 1rem auto !important;            max-width: 640px;            min-height: calc(100vh - 1rem);            padding: 2rem 6rem 2rem 6rem;          }        }      </style></head><body><p><span class="mceNonEditable" data-placeholder-instance-id="55840a5f-e4b2-46ed-9f2f-a8ce11e49f19">{{organisation_logo}}</span></p>
-<table style="border-collapse: collapse; width: 100%; border: 0px dashed rgb(249, 249, 249);" border="1">
-<tbody>
-<tr>
-<td style="width: 66.087%; border-width: 0px; vertical-align: top;">
-<p><strong><span style="font-size: 14pt;"><span class="mceNonEditable" data-placeholder-instance-id="4a3fa042-9b89-492c-adad-1767a7dcfe88">{{organisation_name}}</span></span></strong><br><span style="font-size: 12pt;"><span class="mceNonEditable" data-placeholder-instance-id="3a35b380-3b5c-4381-b4cc-619077efe20c">{{organisation_address}}</span></span><br><span style="font-size: 12pt;"><span class="mceNonEditable" data-placeholder-instance-id="6b66d1f2-9cec-4e47-ae41-5488f05913c3">{{organisation_phone_number}}</span></span></p>
-</td>
-<td style="width: 33.913%; text-align: right; border-width: 0px; vertical-align: top;">
-<p style="text-align: left;"><strong><span style="font-size: 14pt;">PURCHASE ORDER<br></span></strong><span style="font-size: 12pt;">PO # <span class="mceNonEditable" data-placeholder-instance-id="6f301a41-82ae-4359-abbd-859fb7a8a315">{{po_number}}</span></span><br><span style="font-size: 12pt;">PO Date: <span class="mceNonEditable" data-placeholder-instance-id="e718fd06-7826-43e6-99e9-5468beb7bce9">{{po_date}}</span></span><br><span style="font-size: 12pt;">Purchased by: <span class="mceNonEditable" data-placeholder-instance-id="78b5eaaf-5524-4b6b-98c8-13516853ee1c">{{purchased_by}}</span></span></p>
-</td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse; width: 100%; border: 0px dashed rgb(249, 249, 249);" border="1">
-<tbody>
-<tr>
-<td style="width: 50.0726%; border-width: 0px; vertical-align: top;">
-<h3><span style="font-size: 10pt;">Vendor:</span></h3>
-<p><span style="font-size: 10pt;"><span class="mceNonEditable" data-placeholder-instance-id="7ba86654-19ed-4ce1-baee-cc32e8ae6b2b">{{vendor_name}}</span>&nbsp;<br><span class="mceNonEditable" data-placeholder-instance-id="701b07b0-ae3e-436b-aba4-cdf69705ff4e">{{vendor_address}}</span><br></span></p>
-</td>
-<td style="width: 50.0726%; border-width: 0px; vertical-align: top;">
-<h3><span style="font-size: 10pt;">Ship to:</span></h3>
-<p><span style="font-size: 10pt;"><span class="mceNonEditable" data-placeholder-instance-id="a60ad262-e446-4ca6-ae74-b586f0882227">{{ship_to_address}}</span></span></p>
-<p><br><br></p>
-</td>
-</tr>
-</tbody>
-</table>
-<p><span style="font-size: 10pt;"><strong>Job Name:</strong> <span class="mceNonEditable" data-placeholder-instance-id="18116ddf-fe52-41f1-9dc8-cca8b76b773d">{{deal_name}}</span></span></p>
-<p><span style="font-size: 10pt;"><span class="mceNonEditable" data-placeholder-instance-id="678faa0b-8e0f-46a1-965c-b8075e41a29e">{{po_table_variant_three}}</span></span></p>
-
-<table style="border-collapse: collapse; width: 44.058%; height: 58.7813px; margin-right: 0px; border-width: 0px; margin-left: auto;" border="1"><colgroup><col style="width: 50.9868%;"><col style="width: 49.0132%;"></colgroup>
-<tbody>
-<tr style="text-align: right; height: 19.5938px;">
-<td style="border-width: 0px; text-align: right; height: 19.5938px;"><span style="font-size: 10pt;">Sales Tax</span></td>
-<td style="border-width: 0px; height: 19.5938px;"><span style="font-size: 10pt;"><span class="mceNonEditable" data-placeholder-instance-id="a564a212-f484-4e64-a89a-c252f344f853">{{sales_tax}}</span></span></td>
-</tr>
-<tr style="text-align: right; height: 39.1875px;">
-<td style="border-width: 0px; height: 39.1875px;"><span style="font-size: 10pt;">Total</span></td>
-<td style="border-width: 0px; height: 39.1875px;"><span style="font-size: 10pt;">&nbsp;<span class="mceNonEditable" data-placeholder-instance-id="b71efcdc-d303-4bd9-8f4d-79d9d2db3f83">{{total_amount_with_tax}}</span></span></td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p></body></html>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <style>  body {    background: #fff;    font-family: 'Roboto', sans-serif;  }  img {    max-width: 100%;  }  .mce-content-body:not(.mce-content-body[data-mce-placeholder])  {    font-family: 'Roboto', sans-serif;    line-height: 1.4;    background-color: #fff;    box-sizing: border-box;    margin: 0;    padding: 2rem;  }  .mce-pagebreak {    display:none;   }  .mce-content-body {    width: 100%;    height: 100%;    font-size: 14px;    false  }  .tox-editor-header: {    maxWidth: 640px;  }  '.tox-notifications-container': {    display: 'none !important'  }  .mceNonEditable {    background-color: #E1F4EA;    padding: 1px 0;    color: #1F5136;    cursor: pointer !important;    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;    font-size: 12.75px;  }  td {    max-width:18vw !important;  }  .page-break {    border-top: 2px dashed lightgray;    display: flex;    margin: 30px 0;    justify-content: center;    background-color: #fff;    outline:none !important;   }  .page-break p {    background: #fff;    border: 1px solid #c4c4c4;    border-radius: 2px;    box-shadow: 2px 2px 1px rgb(0 0 0 / 15%);    color: #333;    display: block;    font-family: Helvetica,Arial,Tahoma,Verdana,Sans-Serif;    font-size: .75em;    font-weight: 700;    padding: 0.3em 0.6em;    margin-top:-15px;  }  .c-td, .c-th {    padding:4px 0 4px 4px !important;    text-align:start !important;    border:1px solid #000 !important;    border-collapse: collapse !important;  }  .text-bold {    font-weight: 500 !important;  }  .gray-bg {    background-color: #d9d9d9 !important;  }  table,td,th {    border-collapse: collapse;    border: 1px solid #c9c9c9;  }  td, th {    padding: 8px;  }          /* Apply page-like styling */        @media only screen and (min-width: 840px) {          html {            background: #ebebeb;            min-height: 100%;            padding: 0.5rem;          }          body {            background-color: #fff;            box-shadow: 0 0 4px rgba(0, 0, 0, .2);            box-sizing: border-box;            margin: 1rem auto !important;            max-width: 640px;            min-height: calc(100vh - 1rem);            padding: 2rem 6rem 2rem 6rem;          }        }      </style></head><body><div><p><span class="mceNonEditable" data-placeholder-instance-id="d12d26fc-1c4c-4848-a560-17d4d733b262">{{organisation_logo}}</span></p>
+  <table style="border-collapse: collapse; width: 100%; border: 0px dashed rgb(249, 249, 249);" border="1">
+  <tbody>
+  <tr>
+  <td style="width: 66.087%; border-width: 0px; vertical-align: top;">
+  <p><strong><span style="font-size: 14pt;"><span class="mceNonEditable" data-placeholder-instance-id="9f470588-3bcf-44a3-afb8-ecce0e0e5bb6">{{organisation_name}}</span></span></strong><br><span style="font-size: 12pt;"><span class="mceNonEditable" data-placeholder-instance-id="b3a6bd3d-a098-482c-a90c-926bbd940eea">{{organisation_address}}</span></span><br><span style="font-size: 12pt;"><span class="mceNonEditable" data-placeholder-instance-id="6ef3148e-00fa-4978-9f60-f66c688e6c9b">{{organisation_phone_number}}</span></span></p>
+  </td>
+  <td style="width: 33.913%; text-align: right; border-width: 0px; vertical-align: top;">
+  <p style="text-align: left;"><strong><span style="font-size: 14pt;">PURCHASE ORDER<br></span></strong><span style="font-size: 12pt;">PO # <span class="mceNonEditable" data-placeholder-instance-id="3348af65-45f6-45b5-a650-c79abb88cce1">{{po_number}}</span></span><br><span style="font-size: 12pt;">PO Date: <span class="mceNonEditable" data-placeholder-instance-id="6c835c13-4e33-48c4-8666-216cb1579808">{{po_date}}</span></span><br><span style="font-size: 12pt;">Purchased by: <span class="mceNonEditable" data-placeholder-instance-id="58764c28-b04f-46d7-853a-986ca335d4ea">{{purchased_by}}</span></span></p>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <table style="border-collapse: collapse; width: 100%; border: 0px dashed rgb(249, 249, 249);" border="1">
+  <tbody>
+  <tr>
+  <td style="width: 50.0726%; border-width: 0px; vertical-align: top;">
+  <h3><span style="font-size: 10pt;">Vendor:</span></h3>
+  <p><span style="font-size: 10pt;"><span class="mceNonEditable" data-placeholder-instance-id="35a084f0-f5ab-4009-858d-209ff81af9bd">{{vendor_name}}</span>&nbsp;<br><span class="mceNonEditable" data-placeholder-instance-id="1bfe5f25-60ba-474a-9910-4ed2c2c7f44d">{{vendor_address}}</span><br></span></p>
+  </td>
+  <td style="width: 50.0726%; border-width: 0px; vertical-align: top;">
+  <h3><span style="font-size: 10pt;">Ship to:</span></h3>
+  <p><span style="font-size: 10pt;"><span class="mceNonEditable" data-placeholder-instance-id="c64bc971-db83-49ce-a29f-1d7425d0ac54">{{ship_to_address}}</span></span></p>
+  <p><br><br></p>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <p><span style="font-size: 10pt;"><strong>Job Name:</strong> <span class="mceNonEditable" data-placeholder-instance-id="a8edfdc9-9119-4a9e-81e7-803438a1783c">{{deal_name}}</span></span></p>
+  <p><span style="font-size: 10pt;"><span class="mceNonEditable" data-placeholder-instance-id="3085b95a-11f6-4e94-b5f3-9756db52b570">{{po_table_variant_three}}</span></span></p>
+  
+  <table style="border-collapse: collapse; width: 44.058%; height: 58.7813px; margin-right: 0px; border-width: 0px; margin-left: auto;" border="1"><colgroup><col style="width: 50.9868%;"><col style="width: 49.0132%;"></colgroup>
+  <tbody>
+  <tr style="text-align: right; height: 19.5938px;">
+  <td style="border-width: 0px; text-align: right; height: 19.5938px;"><span style="font-size: 10pt;">Sales Tax</span></td>
+  <td style="border-width: 0px; height: 19.5938px;"><span style="font-size: 10pt;"><span class="mceNonEditable" data-placeholder-instance-id="4d26d36b-dcd5-4f2d-afdc-447cb8e37075">{{sales_tax}}</span></span></td>
+  </tr>
+  <tr style="text-align: right; height: 39.1875px;">
+  <td style="border-width: 0px; height: 39.1875px;"><span style="font-size: 10pt;">Total</span></td>
+  <td style="border-width: 0px; height: 39.1875px;"><span style="font-size: 10pt;">&nbsp;<span class="mceNonEditable" data-placeholder-instance-id="2ac90366-00ee-43a6-bfdf-b1c06761f018">{{total_amount_with_tax}}</span></span></td>
+  </tr>
+  </tbody>
+  </table>
+  <p>&nbsp;</p></div></body></html>
