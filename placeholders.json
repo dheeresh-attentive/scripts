@@ -70,27 +70,27 @@
             "parent": "items",
             "columns": {
               "invoice_date": {
-                "style": "padding: 8px;",
+                "style": "padding: 8px; border: 0px;",
                 "value": ""
               },
               "invoice_amount": {
-                "style": "padding: 8px;",
+                "style": "padding: 8px; border: 0px;",
                 "value": ""
               },
               "invoice_number": {
-                "style": "padding: 8px; display: inline-block; width: 400px",
+                "style": "padding: 8px; display: inline-block; width: 400px; border: 0px;",
                 "value": "properties*.name"
               },
               "running_balance": {
-                "style": "padding: 8px;",
+                "style": "padding: 8px; border: 0px;",
                 "value": ""
               },
               "invoice_due_date": {
-                "style": "padding: 8px;",
+                "style": "padding: 8px; border: 0px;",
                 "value": ""
               },
               "invoice_remaining_amount": {
-                "style": "padding: 8px;",
+                "style": "padding: 8px; border: 0px;",
                 "value": ""
               }
             },
@@ -127,7 +127,7 @@
             }
           },
           "table": {
-            "style": "width: 100%; border-collapse: collapse; border: 1px solid #c3c3c3; table-layout: fixed;"
+            "style": "width: 84%; border-collapse: collapse; border: 1px solid #c3c3c3; table-layout: fixed;"
           },
           "headers": [
             {
