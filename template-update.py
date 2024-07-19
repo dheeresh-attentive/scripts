@@ -66,6 +66,8 @@ def main():
                     f"-------------------\nTemplate Update Status Code: {status_code}\n-------------------"
                 )
                 cnt += 1
+                if cnt == 1:
+                    break
             print(f"Total Templates Updated: {cnt} for company: {name}")
 
 
