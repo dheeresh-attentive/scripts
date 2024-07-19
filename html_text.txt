@@ -17,10 +17,13 @@
         <div>
           <strong><span class="mceNonEditable" data-placeholder-instance-id="936cc999-f0a6-4ae3-b742-d76136b4290f">{{organisation_name}}</span></strong>
         </div>
-        <div>
-          <p>
-            3510 N Loop 1604 E <br> San Antonio, TX 78247
-          </p>
+        <div style="margin-top: 1.75rem;">
+          <strong>Bill to:</strong>
+          <div>
+            <p><span class="mceNonEditable" data-placeholder-instance-id="acc43581-5728-46c1-a87c-4a27e0fd9d60">{{billing_name}}</span></p>
+            <p style="margin-top: -5px;"><span class="mceNonEditable" data-placeholder-instance-id="71db9ed3-128b-4903-bdd8-ab7c0e3f9d9c">{{billing_address_line}}</span></p>
+            <p style="margin-top: -10px;"><span class="mceNonEditable" data-placeholder-instance-id="fad2d95f-ed68-413e-87a1-8cf02ac20471">{{billing_city}}</span>, <span class="mceNonEditable" data-placeholder-instance-id="7b26298d-0db0-4b86-9a03-6458038bf3ac">{{billing_state}}</span>&nbsp;<span class="mceNonEditable" data-placeholder-instance-id="02a09fec-9519-4e45-aae8-46ac3bfdb2d6">{{billing_zip}}</span></p>
+          </div>
         </div>
       </div>
       <div style="width: 25%">
@@ -33,16 +36,6 @@
     <p>&nbsp;</p>
     <div style="display: flex; justify-content: space-between">
       <div style="width: 75%">
-        <strong>Bill to:</strong>
-        <div>
-          <p><span class="mceNonEditable" data-placeholder-instance-id="acc43581-5728-46c1-a87c-4a27e0fd9d60">{{billing_name}}</span></p>
-        </div>
-        <div>
-          <p><span class="mceNonEditable" data-placeholder-instance-id="71db9ed3-128b-4903-bdd8-ab7c0e3f9d9c">{{billing_address_line}}</span></p>
-        </div>
-        <div>
-          <p><span class="mceNonEditable" data-placeholder-instance-id="fad2d95f-ed68-413e-87a1-8cf02ac20471">{{billing_city}}</span>, <span class="mceNonEditable" data-placeholder-instance-id="7b26298d-0db0-4b86-9a03-6458038bf3ac">{{billing_state}}</span>&nbsp;<span class="mceNonEditable" data-placeholder-instance-id="02a09fec-9519-4e45-aae8-46ac3bfdb2d6">{{billing_zip}}</span></p>
-        </div>
       </div>
       <div style="width: 25%">
         <div><strong>Amount due:</strong></div>
