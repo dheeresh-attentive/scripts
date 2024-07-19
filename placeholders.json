@@ -1,250 +1,252 @@
-[
-  {
-    "instance_id": "32f9432e-18eb-4bb4-951f-dfeba9ae1c4f",
-    "placeholder": "f88772b3-03b8-48bd-a0c1-654b4cfe5ace",
-    "metadata": {
-      "styles": {
-        "Height": "96",
-        "Width": "280"
-      },
-      "logicals": {},
-      "markups": []
-    }
-  },
-  {
-    "instance_id": "936cc999-f0a6-4ae3-b742-d76136b4290f",
-    "placeholder": "6eb7f3a2-a8f4-417f-91ac-cc0e4924cf91",
-    "metadata": {}
-  },
-  {
-    "instance_id": "6f06cc2c-fe55-4d5b-ac62-13912c63974d",
-    "placeholder": "825f7d09-084e-495c-a54a-59814b07e9d1",
-    "metadata": {
-      "styles": {
-        "Height": "100",
-        "Width": "100"
-      },
-      "logicals": {},
-      "markups": []
-    }
-  },
-  {
-    "instance_id": "acc43581-5728-46c1-a87c-4a27e0fd9d60",
-    "placeholder": "fbd17a70-7eda-4932-8b74-2874b2571d02",
-    "metadata": {}
-  },
-  {
-    "instance_id": "71db9ed3-128b-4903-bdd8-ab7c0e3f9d9c",
-    "placeholder": "7a6bc048-bf96-499f-a3de-99893d4b105e",
-    "metadata": {}
-  },
-  {
-    "instance_id": "fad2d95f-ed68-413e-87a1-8cf02ac20471",
-    "placeholder": "1d44a70c-cd86-4ffd-96e7-986acb0dd5dd",
-    "metadata": {}
-  },
-  {
-    "instance_id": "7b26298d-0db0-4b86-9a03-6458038bf3ac",
-    "placeholder": "d0cd8967-6935-42b3-902d-42bd790c1f70",
-    "metadata": {}
-  },
-  {
-    "instance_id": "02a09fec-9519-4e45-aae8-46ac3bfdb2d6",
-    "placeholder": "7fd2e1e8-f27a-4514-91e3-d95b4b189782",
-    "metadata": {}
-  },
-  {
-    "instance_id": "0ef0f5c6-23c5-45d8-b107-43cdd2a97969",
-    "placeholder": "8a00118b-dc71-4448-a699-92ac7a09dddf",
-    "metadata": {}
-  },
-  {
-    "instance_id": "b7d287af-204f-444f-ae8e-ebbec32e04aa",
-    "placeholder": "21514aa3-91d8-43f8-a867-afcf32bddacc",
-    "metadata": {
-      "markups": {
-        "rows": {
-          "style": "background-color: #e9e9e9; font-size: 0.8rem;",
-          "entity": "properties*",
-          "parent": "items",
-          "columns": {
-            "invoice_date": {
-              "style": "padding: 8px;",
-              "value": ""
-            },
-            "invoice_amount": {
-              "style": "padding: 8px;",
-              "value": ""
-            },
-            "invoice_number": {
-              "style": "padding: 8px; display: inline-block; width: 400px",
-              "value": "properties*.name"
-            },
-            "running_balance": {
-              "style": "padding: 8px;",
-              "value": ""
-            },
-            "invoice_due_date": {
-              "style": "padding: 8px;",
-              "value": ""
-            },
-            "invoice_remaining_amount": {
-              "style": "padding: 8px;",
-              "value": ""
-            }
-          },
-          "sub_row": {
-            "style": "background-color: white; font-size: 0.8rem;",
-            "entity": "invoices*",
-            "parent": "properties",
+{
+  "placeholders": [
+    {
+      "instance_id": "32f9432e-18eb-4bb4-951f-dfeba9ae1c4f",
+      "placeholder": "f88772b3-03b8-48bd-a0c1-654b4cfe5ace",
+      "metadata": {
+        "styles": {
+          "Height": "96",
+          "Width": "280"
+        },
+        "logicals": {},
+        "markups": []
+      }
+    },
+    {
+      "instance_id": "936cc999-f0a6-4ae3-b742-d76136b4290f",
+      "placeholder": "6eb7f3a2-a8f4-417f-91ac-cc0e4924cf91",
+      "metadata": {}
+    },
+    {
+      "instance_id": "6f06cc2c-fe55-4d5b-ac62-13912c63974d",
+      "placeholder": "825f7d09-084e-495c-a54a-59814b07e9d1",
+      "metadata": {
+        "styles": {
+          "Height": "100",
+          "Width": "100"
+        },
+        "logicals": {},
+        "markups": []
+      }
+    },
+    {
+      "instance_id": "acc43581-5728-46c1-a87c-4a27e0fd9d60",
+      "placeholder": "fbd17a70-7eda-4932-8b74-2874b2571d02",
+      "metadata": {}
+    },
+    {
+      "instance_id": "71db9ed3-128b-4903-bdd8-ab7c0e3f9d9c",
+      "placeholder": "7a6bc048-bf96-499f-a3de-99893d4b105e",
+      "metadata": {}
+    },
+    {
+      "instance_id": "fad2d95f-ed68-413e-87a1-8cf02ac20471",
+      "placeholder": "1d44a70c-cd86-4ffd-96e7-986acb0dd5dd",
+      "metadata": {}
+    },
+    {
+      "instance_id": "7b26298d-0db0-4b86-9a03-6458038bf3ac",
+      "placeholder": "d0cd8967-6935-42b3-902d-42bd790c1f70",
+      "metadata": {}
+    },
+    {
+      "instance_id": "02a09fec-9519-4e45-aae8-46ac3bfdb2d6",
+      "placeholder": "7fd2e1e8-f27a-4514-91e3-d95b4b189782",
+      "metadata": {}
+    },
+    {
+      "instance_id": "0ef0f5c6-23c5-45d8-b107-43cdd2a97969",
+      "placeholder": "8a00118b-dc71-4448-a699-92ac7a09dddf",
+      "metadata": {}
+    },
+    {
+      "instance_id": "b7d287af-204f-444f-ae8e-ebbec32e04aa",
+      "placeholder": "21514aa3-91d8-43f8-a867-afcf32bddacc",
+      "metadata": {
+        "markups": {
+          "rows": {
+            "style": "background-color: #e9e9e9; font-size: 0.8rem;",
+            "entity": "properties*",
+            "parent": "items",
             "columns": {
               "invoice_date": {
-                "style": "padding: 8px; border: 1px solid #c3c3c3;",
-                "value": "invoices*.invoice_date"
+                "style": "padding: 8px;",
+                "value": ""
               },
               "invoice_amount": {
-                "style": "padding: 8px; border: 1px solid #c3c3c3;",
-                "value": "invoices*.invoice_amount"
+                "style": "padding: 8px;",
+                "value": ""
               },
               "invoice_number": {
-                "style": "padding: 8px; border: 1px solid #c3c3c3;",
-                "value": "invoices*.invoice_number"
+                "style": "padding: 8px; display: inline-block; width: 400px",
+                "value": "properties*.name"
               },
               "running_balance": {
-                "style": "padding: 8px; border: 1px solid #c3c3c3;",
-                "value": "invoices*.running_balance"
+                "style": "padding: 8px;",
+                "value": ""
               },
               "invoice_due_date": {
-                "style": "padding: 8px; border: 1px solid #c3c3c3;",
-                "value": "invoices*.invoice_due_date"
+                "style": "padding: 8px;",
+                "value": ""
               },
               "invoice_remaining_amount": {
-                "style": "padding: 8px; border: 1px solid #c3c3c3;",
-                "value": "invoices*.invoice_remaining_amount"
+                "style": "padding: 8px;",
+                "value": ""
+              }
+            },
+            "sub_row": {
+              "style": "background-color: white; font-size: 0.8rem;",
+              "entity": "invoices*",
+              "parent": "properties",
+              "columns": {
+                "invoice_date": {
+                  "style": "padding: 8px; border: 1px solid #c3c3c3;",
+                  "value": "invoices*.invoice_date"
+                },
+                "invoice_amount": {
+                  "style": "padding: 8px; border: 1px solid #c3c3c3;",
+                  "value": "invoices*.invoice_amount"
+                },
+                "invoice_number": {
+                  "style": "padding: 8px; border: 1px solid #c3c3c3;",
+                  "value": "invoices*.invoice_number"
+                },
+                "running_balance": {
+                  "style": "padding: 8px; border: 1px solid #c3c3c3;",
+                  "value": "invoices*.running_balance"
+                },
+                "invoice_due_date": {
+                  "style": "padding: 8px; border: 1px solid #c3c3c3;",
+                  "value": "invoices*.invoice_due_date"
+                },
+                "invoice_remaining_amount": {
+                  "style": "padding: 8px; border: 1px solid #c3c3c3;",
+                  "value": "invoices*.invoice_remaining_amount"
+                }
               }
             }
-          }
-        },
-        "table": {
-          "style": "width: 100%; border-collapse: collapse; border: 1px solid #c3c3c3; table-layout: fixed;"
-        },
-        "headers": [
-          {
-            "key": "invoice_number",
-            "style": "width: 22%; background-color: #000; color: #FFF; padding: 8px; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem; word-wrap: break-word; word-break: break-all;",
-            "display_name": "Invoice Number"
           },
-          {
-            "key": "invoice_date",
-            "style": "width: 13%; background-color: #000; color: #FFF; padding: 8px; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem;",
-            "display_name": "Invoice Date"
+          "table": {
+            "style": "width: 100%; border-collapse: collapse; border: 1px solid #c3c3c3; table-layout: fixed;"
           },
-          {
-            "key": "invoice_due_date",
-            "style": "width: 13%; background-color: #000; color: #FFF; padding: 8px; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem;",
-            "display_name": "Due Date"
-          },
-          {
-            "key": "invoice_amount",
-            "style": "width: 17%; background-color: #000; color: #FFF; padding: 8px; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem;",
-            "display_name": "Invoice Amount"
-          },
-          {
-            "key": "invoice_remaining_amount",
-            "style": "width: 17%; background-color: #000; color: #FFF; padding: 8px; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem;",
-            "display_name": "Remaining Amount"
-          },
-          {
-            "key": "running_balance",
-            "style": "width: 18%; background-color: #000; color: #FFF; padding: 8px; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem;",
-            "display_name": "Running Balance"
-          }
-        ]
+          "headers": [
+            {
+              "key": "invoice_number",
+              "style": "width: 22%; background-color: #000; color: #FFF; padding: 8px; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem; word-wrap: break-word; word-break: break-all;",
+              "display_name": "Invoice Number"
+            },
+            {
+              "key": "invoice_date",
+              "style": "width: 13%; background-color: #000; color: #FFF; padding: 8px; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem;",
+              "display_name": "Invoice Date"
+            },
+            {
+              "key": "invoice_due_date",
+              "style": "width: 13%; background-color: #000; color: #FFF; padding: 8px; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem;",
+              "display_name": "Due Date"
+            },
+            {
+              "key": "invoice_amount",
+              "style": "width: 17%; background-color: #000; color: #FFF; padding: 8px; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem;",
+              "display_name": "Invoice Amount"
+            },
+            {
+              "key": "invoice_remaining_amount",
+              "style": "width: 17%; background-color: #000; color: #FFF; padding: 8px; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem;",
+              "display_name": "Remaining Amount"
+            },
+            {
+              "key": "running_balance",
+              "style": "width: 18%; background-color: #000; color: #FFF; padding: 8px; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem;",
+              "display_name": "Running Balance"
+            }
+          ]
+        }
       }
-    }
-  },
-  {
-    "instance_id": "5e847c83-9f66-468a-8351-459a18bdce43",
-    "placeholder": "e01d4c3d-af95-4a1a-ac82-f635265ff616",
-    "metadata": {
-      "markups": {
-        "rows": [
-          {
-            "entity": "ageing_data",
-            "parent": "ageing_data_parent",
-            "columns": {
-              "current": {
-                "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
-                "value": "ageing_data.current"
-              },
-              "total_due": {
-                "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
-                "value": "ageing_data.total_due"
-              },
-              "one_to_thirty": {
-                "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
-                "value": "ageing_data.past_1_to_30_days"
-              },
-              "one_twenty_plus": {
-                "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
-                "value": "ageing_data.past_120_plus_days"
-              },
-              "sixty_one_to_ninety": {
-                "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
-                "value": "ageing_data.past_61_to_90_days"
-              },
-              "thirty_one_to_sixty": {
-                "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
-                "value": "ageing_data.past_31_to_60_days"
-              },
-              "ninety_one_to_one_twenty": {
-                "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
-                "value": "ageing_data.past_91_to_120_days"
+    },
+    {
+      "instance_id": "5e847c83-9f66-468a-8351-459a18bdce43",
+      "placeholder": "e01d4c3d-af95-4a1a-ac82-f635265ff616",
+      "metadata": {
+        "markups": {
+          "rows": [
+            {
+              "entity": "ageing_data",
+              "parent": "ageing_data_parent",
+              "columns": {
+                "current": {
+                  "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
+                  "value": "ageing_data.current"
+                },
+                "total_due": {
+                  "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
+                  "value": "ageing_data.total_due"
+                },
+                "one_to_thirty": {
+                  "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
+                  "value": "ageing_data.past_1_to_30_days"
+                },
+                "one_twenty_plus": {
+                  "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
+                  "value": "ageing_data.past_120_plus_days"
+                },
+                "sixty_one_to_ninety": {
+                  "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
+                  "value": "ageing_data.past_61_to_90_days"
+                },
+                "thirty_one_to_sixty": {
+                  "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
+                  "value": "ageing_data.past_31_to_60_days"
+                },
+                "ninety_one_to_one_twenty": {
+                  "style": "font-size: 0.8rem; padding: 8px; color: #000; border: 1px solid #c3c3c3; text-align: center;",
+                  "value": "ageing_data.past_91_to_120_days"
+                }
               }
             }
-          }
-        ],
-        "table": {
-          "style": "width: 100%; border-collapse: collapse; border: 1px solid #c3c3c3;"
-        },
-        "headers": [
-          {
-            "key": "current",
-            "style": "width: 14%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
-            "display_name": "Current"
+          ],
+          "table": {
+            "style": "width: 100%; border-collapse: collapse; border: 1px solid #c3c3c3;"
           },
-          {
-            "key": "one_to_thirty",
-            "style": "width: 14%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
-            "display_name": "1-30 Days Past Due"
-          },
-          {
-            "key": "thirty_one_to_sixty",
-            "style": "width: 14%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
-            "display_name": "31-60 Days Past Due"
-          },
-          {
-            "key": "sixty_one_to_ninety",
-            "style": "width: 14%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
-            "display_name": "61-90 Days Past Due"
-          },
-          {
-            "key": "ninety_one_to_one_twenty",
-            "style": "width: 14%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
-            "display_name": "91-120 Days Past Due"
-          },
-          {
-            "key": "one_twenty_plus",
-            "style": "width: 14%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
-            "display_name": "121+ Days Past Due"
-          },
-          {
-            "key": "total_due",
-            "style": "width: 16%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
-            "display_name": "Total Due"
-          }
-        ]
+          "headers": [
+            {
+              "key": "current",
+              "style": "width: 14%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
+              "display_name": "Current"
+            },
+            {
+              "key": "one_to_thirty",
+              "style": "width: 14%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
+              "display_name": "1-30 Days Past Due"
+            },
+            {
+              "key": "thirty_one_to_sixty",
+              "style": "width: 14%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
+              "display_name": "31-60 Days Past Due"
+            },
+            {
+              "key": "sixty_one_to_ninety",
+              "style": "width: 14%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
+              "display_name": "61-90 Days Past Due"
+            },
+            {
+              "key": "ninety_one_to_one_twenty",
+              "style": "width: 14%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
+              "display_name": "91-120 Days Past Due"
+            },
+            {
+              "key": "one_twenty_plus",
+              "style": "width: 14%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
+              "display_name": "121+ Days Past Due"
+            },
+            {
+              "key": "total_due",
+              "style": "width: 16%; padding: 8px; background-color: #000; color: #FFF; font-weight: bold; border-width: 0; text-align: center; font-size: 0.9rem",
+              "display_name": "Total Due"
+            }
+          ]
+        }
       }
     }
-  }
-]
+  ]
+}
