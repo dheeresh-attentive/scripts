@@ -18,7 +18,7 @@
           <strong><span class="mceNonEditable" data-placeholder-instance-id="936cc999-f0a6-4ae3-b742-d76136b4290f">{{organisation_name}}</span></strong>
         </div>
         <div>
-          <p style="font-size: 12.75px;">
+          <p>
             3510 N Loop 1604 E <br> San Antonio, TX 78247
           </p>
         </div>
