@@ -41,7 +41,7 @@
           <p><span class="mceNonEditable" data-placeholder-instance-id="71db9ed3-128b-4903-bdd8-ab7c0e3f9d9c">{{billing_address_line}}</span></p>
         </div>
         <div>
-          <p><span class="mceNonEditable" data-placeholder-instance-id="fad2d95f-ed68-413e-87a1-8cf02ac20471">{{billing_city}}</span>, <span class="mceNonEditable" data-placeholder-instance-id="7b26298d-0db0-4b86-9a03-6458038bf3ac">{{billing_state}}</span><span class="mceNonEditable" data-placeholder-instance-id="02a09fec-9519-4e45-aae8-46ac3bfdb2d6">{{billing_zip}}</span></p>
+          <p><span class="mceNonEditable" data-placeholder-instance-id="fad2d95f-ed68-413e-87a1-8cf02ac20471">{{billing_city}}</span>, <span class="mceNonEditable" data-placeholder-instance-id="7b26298d-0db0-4b86-9a03-6458038bf3ac">{{billing_state}}</span>&nbsp;<span class="mceNonEditable" data-placeholder-instance-id="02a09fec-9519-4e45-aae8-46ac3bfdb2d6">{{billing_zip}}</span></p>
         </div>
       </div>
       <div style="width: 25%">
