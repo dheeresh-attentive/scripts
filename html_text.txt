@@ -35,7 +35,7 @@
       <div style="width: 75%">
         <strong>Bill to:</strong>
         <div>
-          <p><span class="mceNonEditable" data-placeholder-instance-id="acc43581-5728-46c1-a87c-4a27e0fd9d60">{{customer_company_name}}</span></p>
+          <p><span class="mceNonEditable" data-placeholder-instance-id="acc43581-5728-46c1-a87c-4a27e0fd9d60">{{billing_name}}</span></p>
         </div>
         <div>
           <p><span class="mceNonEditable" data-placeholder-instance-id="71db9ed3-128b-4903-bdd8-ab7c0e3f9d9c">{{billing_address_line}}</span></p>
