@@ -1,78 +1,95 @@
-{
-  "placeholders": [
-    {
-      "instance_id": "34d7ac53-e24d-4da3-9d83-57f8863ae454",
-      "placeholder": "f88772b3-03b8-48bd-a0c1-654b4cfe5ace",
-      "metadata": {
-        "styles": {
-          "Height": "70",
-          "Width": "230"
-        },
-        "logicals": {},
-        "markups": []
-      }
-    },
-    {
-      "instance_id": "c5f06b79-2b8b-4f37-9f74-d64de8bbe5bb",
-      "placeholder": "6eb7f3a2-a8f4-417f-91ac-cc0e4924cf91",
-      "metadata": {}
-    },
-    {
-      "instance_id": "386457d0-110e-4213-aa0d-183c202eecaf",
-      "placeholder": "f99bd781-69c8-4d77-a766-363837427843",
-      "metadata": {}
-    },
-    {
-      "instance_id": "91100f43-a12d-4b94-b699-001b7372517a",
-      "placeholder": "627275d0-27f5-4b46-8455-6c923072c97e",
-      "metadata": {}
-    },
-    {
-      "instance_id": "ff098457-687a-4092-a824-b9904cfdd504",
-      "placeholder": "e824fe80-8027-4c9d-9523-44e80cd258af",
-      "metadata": {}
-    },
-    {
-      "instance_id": "7177fc5a-86fa-4cab-96af-e688442e410b",
-      "placeholder": "68f6b158-d821-4f6e-99dd-2b4adf254bf0",
-      "metadata": {}
-    },
-    {
-      "instance_id": "7af04c23-c32e-4f81-8021-8d37b5d457fb",
-      "placeholder": "157ae300-3474-443b-9f1b-1dc4fcf9cd8a",
-      "metadata": {}
-    },
-    {
-      "instance_id": "b8305c6e-804b-427b-b385-bcf179b1069f",
-      "placeholder": "521e6e9f-c27f-4d45-a6b4-0a67fdc57dca",
-      "metadata": {
+[
+  {
+    "instance_id": "32f9432e-18eb-4bb4-951f-dfeba9ae1c4f",
+    "placeholder": "f88772b3-03b8-48bd-a0c1-654b4cfe5ace",
+    "metadata": {
+      "styles": {
+        "Height": "96",
+        "Width": "280"
+      },
+      "logicals": {},
+      "markups": []
+    }
+  },
+  {
+    "instance_id": "936cc999-f0a6-4ae3-b742-d76136b4290f",
+    "placeholder": "6eb7f3a2-a8f4-417f-91ac-cc0e4924cf91",
+    "metadata": {}
+  },
+  {
+    "instance_id": "6f06cc2c-fe55-4d5b-ac62-13912c63974d",
+    "placeholder": "825f7d09-084e-495c-a54a-59814b07e9d1",
+    "metadata": {
+      "styles": {
+        "Height": "100",
+        "Width": "100"
+      },
+      "logicals": {},
+      "markups": []
+    }
+  },
+  {
+    "instance_id": "acc43581-5728-46c1-a87c-4a27e0fd9d60",
+    "placeholder": "fbd17a70-7eda-4932-8b74-2874b2571d02",
+    "metadata": {}
+  },
+  {
+    "instance_id": "71db9ed3-128b-4903-bdd8-ab7c0e3f9d9c",
+    "placeholder": "7a6bc048-bf96-499f-a3de-99893d4b105e",
+    "metadata": {}
+  },
+  {
+    "instance_id": "fad2d95f-ed68-413e-87a1-8cf02ac20471",
+    "placeholder": "1d44a70c-cd86-4ffd-96e7-986acb0dd5dd",
+    "metadata": {}
+  },
+  {
+    "instance_id": "7b26298d-0db0-4b86-9a03-6458038bf3ac",
+    "placeholder": "d0cd8967-6935-42b3-902d-42bd790c1f70",
+    "metadata": {}
+  },
+  {
+    "instance_id": "02a09fec-9519-4e45-aae8-46ac3bfdb2d6",
+    "placeholder": "7fd2e1e8-f27a-4514-91e3-d95b4b189782",
+    "metadata": {}
+  },
+  {
+    "instance_id": "0ef0f5c6-23c5-45d8-b107-43cdd2a97969",
+    "placeholder": "8a00118b-dc71-4448-a699-92ac7a09dddf",
+    "metadata": {}
+  },
+  {
+    "instance_id": "b7d287af-204f-444f-ae8e-ebbec32e04aa",
+    "placeholder": "21514aa3-91d8-43f8-a867-afcf32bddacc",
+    "metadata": {
+      "markups": {
         "rows": {
           "style": "background-color: #e9e9e9; font-size: 0.8rem;",
           "entity": "properties*",
           "parent": "items",
           "columns": {
             "invoice_date": {
-              "style": "padding: 8px; border: 0px;",
+              "style": "padding: 8px;",
               "value": ""
             },
             "invoice_amount": {
-              "style": "padding: 8px; border: 0px;",
+              "style": "padding: 8px;",
               "value": ""
             },
             "invoice_number": {
-              "style": "padding: 8px; display: inline-block; width: 400px; border: 0px;",
+              "style": "padding: 8px; display: inline-block; width: 400px",
               "value": "properties*.name"
             },
             "running_balance": {
-              "style": "padding: 8px; border: 0px;",
+              "style": "padding: 8px;",
               "value": ""
             },
             "invoice_due_date": {
-              "style": "padding: 8px; border: 0px;",
+              "style": "padding: 8px;",
               "value": ""
             },
             "invoice_remaining_amount": {
-              "style": "padding: 8px; border: 0px;",
+              "style": "padding: 8px;",
               "value": ""
             }
           },
@@ -109,7 +126,7 @@
           }
         },
         "table": {
-          "style": "width: 84%; border-collapse: collapse; border: 1px solid #c3c3c3; table-layout: fixed;"
+          "style": "width: 100%; border-collapse: collapse; border: 1px solid #c3c3c3; table-layout: fixed;"
         },
         "headers": [
           {
@@ -144,11 +161,13 @@
           }
         ]
       }
-    },
-    {
-      "instance_id": "4689c6cf-0e82-445f-8b4c-225661ef270a",
-      "placeholder": "92e496f8-4af0-477f-98a9-68862aec3eba",
-      "metadata": {
+    }
+  },
+  {
+    "instance_id": "5e847c83-9f66-468a-8351-459a18bdce43",
+    "placeholder": "e01d4c3d-af95-4a1a-ac82-f635265ff616",
+    "metadata": {
+      "markups": {
         "rows": [
           {
             "entity": "ageing_data",
@@ -227,5 +246,5 @@
         ]
       }
     }
-  ]
-}
+  }
+]

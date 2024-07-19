@@ -15,13 +15,11 @@
     <div style="display: flex; justify-content: space-between; font-size: 1.1rem">
       <div style="width: 75%">
         <div>
-          <strong
-            ><span class="mceNonEditable" data-placeholder-instance-id="894e4def-4744-4382-95cd-61587763136f">{{organisation_name}}</span></strong
-          >
+          <strong><span class="mceNonEditable" data-placeholder-instance-id="894e4def-4744-4382-95cd-61587763136f">{{organisation_name}}</span></strong>
         </div>
         <div>
-          <p>
-            <span class="mceNonEditable" data-placeholder-instance-id="c30c1457-db4b-4a6c-b81d-135eec4d3f9b">{{organisation_address}}</span>
+          <p style="font-size: 12.75px;">
+            3510 N Loop 1604 E <br> San Antonio, TX 78247
           </p>
         </div>
       </div>
@@ -40,7 +38,10 @@
           <p><span class="mceNonEditable" data-placeholder-instance-id="ff098457-687a-4092-a824-b9904cfdd504">{{customer_company_name}}</span></p>
         </div>
         <div>
-          <p><span class="mceNonEditable" data-placeholder-instance-id="7177fc5a-86fa-4cab-96af-e688442e410b">{{customer_company_address}}</span></p>
+          <p><span class="mceNonEditable" data-placeholder-instance-id="7177fc5a-86fa-4cab-96af-e688442e410b">{{billing_address_line}}</span></p>
+        </div>
+        <div>
+          <p><span class="mceNonEditable" data-placeholder-instance-id="ff098457-687a-4092-a824-b9904cfdd504">{{billing_city}}</span></p>,  <p><span class="mceNonEditable" data-placeholder-instance-id="7177fc5a-86fa-4cab-96af-e688442e410b">{{billing_state}}</span></p>  <p><span class="mceNonEditable" data-placeholder-instance-id="7177fc5a-86fa-4cab-96af-e688442e410b">{{billing_zip}}</span></p>
         </div>
       </div>
       <div style="width: 25%">
